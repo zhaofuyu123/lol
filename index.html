@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<style>
+		*{
+			padding:0;
+			margin:0 ;
+		}
+		a{
+			text-decoration: none;
+		}
+		li{
+			list-style: none;
+		}
+		a{
+			color: black;
+		}
+		.img{
+			vertical-align: bottom;
+		}
+		.clear:after {
+    		content: '';
+    		display: block;
+    		height: 0;
+    		clear: both;
+		}
+		.img1{
+			margin-left: 100px ;
+			margin-top: 20px;
+		}
+		.top{
+			background-color: black;
+			height: 200px;
+			position: relative;
+			width: 100%;
+		}
+		.top>ul{
+			display: inline-block;
+			position: absolute;
+			top: 60px;
+			left: 500px;
+		}
+		.nav{			
+			float: left;
+			width:120px ;
+			height: 30px;
+		}
+		.nav a{
+			color: white;
+		}
+		.nav a:hover{
+			 color: rgb(0,180,255);
+			 font-size: 20px;
+		}
+		.person{
+			position: absolute;
+			top: 30px;
+			right: 350px;
+		}
+		.p0{
+			color: white;
+			display: inline-block;
+		}
+		.denglu{
+			color: gold;
+			text-decoration: underline;
+		}
+		.open{
+			position: absolute;
+			top: 50px;
+			right: 150px;
+		}
+		.find{
+			position: absolute;
+			right: 80px;
+			top: 100px;
+		}
+		.search{
+			width: 200px;
+			height: 30px;
+			border: 2px solid rgb(211,173,94);
+			background-color: #383733;
+			padding-left: 20px;
+		}
+		.submit{
+			vertical-align: bottom;
+			width: 50px;
+			height: 35px;
+			background: #383733 url(images/search.png) no-repeat center center;
+			border: 1px solid gold;
+		}
+		.img2{
+			width: 100%;		
+		}
+		.menu{	
+			height: 60px;
+		}
+		.menu ul{
+			width: 600px;
+			margin: 15px 450px;
+		}
+		.menu li{
+			float: left;
+			width: 150px;
+			height: 30px;
+			text-align: center;
+		}
+		.menu li a{
+			padding-bottom: 10px;
+		}
+		.menu a:hover{
+			border-bottom: 2px solid gold;
+		}
+		.mid{
+			background: url(images/bg-content-top.jpg);
+			height: 400px;
+		}
+		.container{
+			width: 1400px;
+			height:400px ;
+			margin: 0 auto;
+		}
+		.left{
+			width: 800px;
+			position: relative;
+			margin: 0;
+			float: left;
+		}
+		.left ul{
+			height:334px ;
+		}
+		.left li{
+			width: 800px;
+			height:334px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.banner-one{
+			background: url(images/img01.jpg) no-repeat center center;
+		}
+		.banner-two{
+			background: url(images/img02.jpg) no-repeat center center;
+		}
+		.banner-three{
+			background: url(images/img03.jpg) no-repeat center center;
+		}
+		.right{
+			float: right;
+			width: 500px;
+		}
+		.right ul{
+			padding-top: 100px;
+		}
+		.right li{
+			width: 150px;
+			height: 50px;
+			float: left;
+			background-color: white;
+		}
+		.bottom{
+			width: 1300px;
+			margin: 0 auto;
+			height: 600px;
+		}
+		.bottom .news li{
+			float: left;
+			width: 150px;
+			text-align: center;
+		}
+		.hotpoint{
+			width: 700px;
+			float: left;
+		}
+		.photo{
+			float: right;
+			margin-top:30px ;
+			width: 500px;
+		}
+		.news{
+			padding-top: 50px;
+			padding-bottom:30px ;
+			border-bottom: 1px solid gray;
+		}
+		.news li a:hover{
+			
+			font-weight:  bold;
+		}
+		.head {
+			margin-top: 30px;
+			width: 700px;
+			position: relative;
+		}
+		.head p{
+			display: inline-block;
+			font-size: 30px;
+			font-weight: bold;
+			position: absolute;
+			bottom: 50px;
+			right: 0;
+		}
+		.message{
+			margin-top: 50px;
+			width: 700px;
+		}
+		.message li{
+			width: 700px;
+			height: 40px;
+			position: relative;
+		}
+		.message a{
+			position: absolute;
+			left: 50px;
+			top: 3px;
+			font-size: 18px;
+		}
+		.p1{
+			display: inline-block;
+			background-color: #e3e2e2;
+			padding: 5px;
+			color: black;
+		}
+		.p2{
+			display: inline-block;
+			position: absolute;
+			right: 0;
+		}
+		.last{
+			width: 100%;
+			height: 300px;
+			background: #e3e2e2;
+			position: relative;
+
+		}
+		.you{
+			position: absolute;
+			top: 100px;
+			right: 150px;
+			font-size: 12px;
+		}
+		.last li{
+			float: left;
+			width: 100px;
+			text-align: center;
+			border-right: 1px solid black;
+		}
+		.last .first{
+			text-align: left;
+		}
+		.last .final{
+			border-right: none;
+		}
+		.last .zuo{
+			width: 500px;
+			height: 150px;
+			position: absolute;
+			left: 10px;
+			top: 50px;
+		}
+		.zuo .im1{
+			position: absolute;
+			left: 180px;
+			top: 38px;
+		}
+		.zuo .im2{
+			position: absolute;
+			right: 0;
+			top: 50px;
+		}
+		.left .jian{
+			position: absolute;
+			left: 50px;
+			z-index: 10;
+			top: 150px;
+		}
+		.left .tou{
+			position: absolute;
+			right: 50px;
+			z-index: 10;
+			top: 150px;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<img src="images/1.jpg" class="img1"/>
+		<ul class="clear">
+			<li class="nav"><a href="#">游戏资料</a></li>
+			<li class="nav"><a href="#">商城/合作</a></li>
+			<li class="nav"><a href="#">用户互动</a></li>
+			<li class="nav"><a href="#">赛事中心</a></li>
+			<li class="nav"><a href="#">自助系统</a></li>
+		</ul>
+		<img src="images/peron.png"/ class="person">
+		<div class="open"><p class="p0">亲爱的召唤师，欢迎</p><a href="#" class="denglu">登录</a></div>
+		<div class="find">
+			<form class="form clear">
+				<input type="text" placeholder="搜索" class="search" />
+				<input type="button" class="submit" />
+			</form>
+		</div>
+	</div>
+	<div>
+		<img src="images/bg-top.jpg"  class="img2"/>
+	</div>
+	<div class="menu">
+		<ul class="clear">
+			<li><a href="#">综合资讯</a></li>
+			<li><a href="#">视频中心</a></li>
+			<li><a href="#">赛事中心</a></li>
+			<li><a href="#">活动中心</a></li>
+		</ul>
+	</div>
+	<div class="mid clear">
+		<div class="container clear">
+			<div class="left">
+				<a href="#"><img src="images/prev.png"/ class="jian"></a>
+				<a href="#"><img src="images/next.png"/ class="tou"></a>
+				<ul>
+					<li class="banner-one"></li>
+					<li class="banner-two"></li>
+					<li class="banner-three"></li>
+				</ul>		
+			</div>
+			<div class="right">
+				<ul class="clear">
+					<li><a href="#">新手推荐</a></li>
+					<li><a href="#">宇宙官网</a></li>
+					<li><a href="#">周边商城</a></li>
+					<li><a href="#">新客户端</a></li>
+					<li><a href="#">峡谷之巅</a></li>
+					<li><a href="#">CDK兑换</a></li>
+					<li><a href="#">轮换模式</a></li>
+					<li><a href="#">游戏资料</a></li>
+					<li><a href="#">领奖中心</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="bottom clear">
+		<ul class="clear news">
+			<li><a href="#">最新资讯</a></li>
+			<li><a href="#">综合新闻</a></li>
+			<li><a href="#">官方公告</a></li>
+			<li><a href="#">赛事新闻</a></li>
+			<li><a href="#">论坛资讯</a></li>
+			<li><a href="#">周免英雄</a></li>
+			<li><a href="#">最新皮肤</a></li>
+			<li><a href="#">最新英雄</a></li>
+		</ul>
+		<div class="hotpoint">
+			<div class="head">
+				<img src="images/pic-news9.jpg" />
+				<p>S8总决赛落幕，IG勇夺第一冠!</p>
+			</div>
+			<div class="message">
+				<ul>
+					<li>
+						<p class="p1">新闻</p><a href="#">ig3:0带走FNC,拿下冠军!</a><p class="p2">7月7日</p>
+					</li>
+					<li>
+						<p class="p1">新闻</p><a href="#">LPL第一冠，中国第一冠！</a><p class="p2">7月8日</p>
+					</li>
+					<li>
+						<p class="p1">新闻</p><a href="#">各高校沸腾，不断传出ig牛逼。</a><p class="p2">7月9日</p>
+					</li>
+					<li>
+						<p class="p1">新闻</p><a href="#">Theshy天神下凡一锤四，引得玩家纷纷模仿。</a><p class="p2">7月10日</p>
+					</li>
+					<li>
+						<p class="p1">新闻</p><a href="#">S8是中国电竞史上值得铭记的一年，代表着太多太多。</a><p class="p2">7月11日</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="photo">
+			<a href="#"><img src="images/skin01.jpg"/></a>
+			<a href="#"><img src="images/skin02.jpg"/></a>
+			<a href="#"><img src="images/skin03.jpg"/></a>
+			<a href="#"><img src="images/skin04.jpg"/></a>
+			<a href="#"><img src="images/skin05.jpg"/></a>
+			<a href="#"><img src="images/skin06.jpg"/></a>
+			<a href="#"><img src="images/skin07.jpg"/></a>
+		</div>		
+	</div>
+	<div class="last">
+		<div class="zuo">
+			<img src="images/6-16012Q42039.jpg"	/ class="im1">
+			<img src="images/0007019952397406_b.jpg"/ class="im2">
+		</div>
+		<div class="you">
+			<ul class="clear">
+				<li class="first"><a href="#">腾讯互动娱乐</a></li>
+				<li><a href="#">隐私保护指引</a></li>
+				<li><a href="#">腾讯游戏招聘</a></li>
+				<li><a href="#">腾讯游戏客服</a></li>
+				<li class="final"><a href="#">腾讯游戏列表</a></li>
+			</ul>
+			<p><a href="#">腾信公司版权所有</a></p>
+			<p>COPYRIGHT © 1998 - 2020 TENCENT. ALL RIGHTS RESERVED.</p>
+			<p>COPYRIGHT © 2012 Riot Games,Inc. ALL RIGHTS RESERVED.</p>
+			<p>本网络游戏适合18+岁的用户使用；为了您的健康，请合理控制游戏时间。</p>
+			<p>批准文号：新出审字[2011]310号 |文网进字[2011] 004号 | 出版物号：ISBN 978-7-89989-145-2|全国文化市场统一举报电话：12318</p>
+		</div>
+	</div>
+</body>
+</html>
